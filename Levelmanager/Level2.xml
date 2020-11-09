@@ -1,0 +1,754 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="MyDataTypes.LevelObjectData[]">
+    <Item>
+      <ObjectType>Player</ObjectType>
+      <ObjectName>Mario</ObjectName>
+      <Location>50 625</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>104</ObjectName>
+      <Location>-1024 656</Location>
+    </Item>
+      <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>70</ObjectName>
+      <Location>0 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>47</ObjectName>
+      <Location>1056 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>1</ObjectName>
+      <Location>256 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>288 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>3</ObjectName>
+      <Location>320 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>352 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>384 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>416 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>448 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>480 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>3</ObjectName>
+      <Location>512 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>544 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>5</ObjectName>
+      <Location>576 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>6</ObjectName>
+      <Location>608 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>640 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>672 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockPowerUp</ObjectName>
+      <Location>992 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BrickCoin</ObjectName>
+      <Location>1024 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>HiddenBlock</ObjectName>
+      <Location>1024 272</Location>
+    </Item>
+        <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>640 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>672 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>704 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>736 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>768 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>800 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>832 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>864 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>896 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>928 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>960 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockPowerUp</ObjectName>
+      <Location>416 464</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>800 240</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>832 240</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>864 240</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>896 240</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>704 112</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>5</ObjectName>
+      <Location>896 112</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>416 176</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>448 176</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>480 176</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>512 176</Location>
+    </Item>
+
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>8</ObjectName>
+      <Location>32 208</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>6</ObjectName>
+      <Location>64 208</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>5</ObjectName>
+      <Location>96 208</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>128 208</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>3</ObjectName>
+      <Location>160 208</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>192 208</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>1</ObjectName>
+      <Location>224 208</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>HiddenBlock</ObjectName>
+      <Location>576 208</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>32 -176</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>128 -80</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>5</ObjectName>
+      <Location>160 -112</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>192 -208</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>256 -336</Location>
+    </Item>
+   <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>320 -464</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>384 -592</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>9</ObjectName>
+      <Location>416 -656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>704 -624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>9</ObjectName>
+      <Location>32 -752</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>928 -336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>GroundBlock</ObjectName>
+      <Location>768 -176</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>GroundBlock</ObjectName>
+      <Location>800 -208</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>GroundBlock</ObjectName>
+      <Location>832 -240</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>GroundBlock</ObjectName>
+      <Location>864 -272</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>GroundBlock</ObjectName>
+      <Location>896 -304</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>6</ObjectName>
+      <Location>832 -496</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>864 -496</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>3</ObjectName>
+      <Location>896 -496</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>928 -496</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>GroundBlock</ObjectName>
+      <Location>768 -16</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>GroundBlock</ObjectName>
+      <Location>800 -16</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>GroundBlock</ObjectName>
+      <Location>832 -16</Location>
+    </Item>
+       <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>GroundBlock</ObjectName>
+      <Location>864 -16</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>GroundBlock</ObjectName>
+      <Location>896 -16</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>928 -48</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>736 -48</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>HiddenBlock</ObjectName>
+      <Location>1024 -496</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>19</ObjectName>
+      <Location>480 -912</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>384 -816</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>640 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>672 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>704 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>736 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>768 304</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>768 272</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>768 240</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>672 48</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>640 16</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>608 -16</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>576 16</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>544 48</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>512 80</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>192 -240</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>256 -368</Location>
+    </Item>
+        <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>320 -496</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>384 -624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>384 -848</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>416 -880</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>1088 -912</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>1088 -880</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>1088 -848</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>1088 -816</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>1088 -784</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>1088 -752</Location>
+    </Item>
+    <!--end-->
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>BigHill</ObjectName>
+      <Location>1568 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>UnbreakableBlock</ObjectName>
+      <Location>1760 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>FlagPole</ObjectName>
+      <Location>1774 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Exit</ObjectType>
+      <ObjectName>CastleExit</ObjectName>
+      <Location>1974 560</Location>
+    </Item>
+   <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Castle</ObjectName>
+      <Location>1888 496</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush1</ObjectName>
+      <Location>2000 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>SmallHill</ObjectName>
+      <Location>2080 656</Location>
+    </Item>
+    <!--enemies-->
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>1024 -368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>992 -368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>992 -912</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Koopa</ObjectName>
+      <Location>448 560</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Koopa</ObjectName>
+      <Location>768 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Koopa</ObjectName>
+      <Location>864 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Koopa</ObjectName>
+      <Location>960 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Koopa</ObjectName>
+      <Location>832 -48</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Koopa</ObjectName>
+      <Location>736 -656</Location>
+    </Item>
+    <!--scenery-->
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>1424 352</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud3</ObjectName>
+      <Location>1250 384</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud2</ObjectName>
+      <Location>928 352</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>448 384</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush3</ObjectName>
+      <Location>96 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush1</ObjectName>
+      <Location>1056 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush2</ObjectName>
+      <Location>1200 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush2</ObjectName>
+      <Location>832 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush1</ObjectName>
+      <Location>960 112</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush1</ObjectName>
+      <Location>256 -112</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>BigHill</ObjectName>
+      <Location>512 -656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>BigHill</ObjectName>
+      <Location>640 -912</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush2</ObjectName>
+      <Location>896 -912</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>SmallHill</ObjectName>
+      <Location>64 -752</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>480 -528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud3</ObjectName>
+      <Location>480 0</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud2</ObjectName>
+      <Location>64 -330</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>120 -592</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>480 -528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud3</ObjectName>
+      <Location>576 -400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud2</ObjectName>
+      <Location>1300 -330</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>1600 -592</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>120 -592</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>480 -528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud3</ObjectName>
+      <Location>192 -1000</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud2</ObjectName>
+      <Location>608 -1100</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>1088 -1200</Location>
+    </Item>
+  </Asset>
+</XnaContent>

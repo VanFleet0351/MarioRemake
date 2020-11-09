@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="MyDataTypes.LevelObjectData[]">
+    <!--  test area  -->
+    <Item>
+      <ObjectType>Player</ObjectType>
+      <ObjectName>Mario</ObjectName>
+      <Location>50 625</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>25</ObjectName>
+      <Location>0 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>PipeS</ObjectName>
+      <Location>352 592</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>PipeS</ObjectName>
+      <Location>704 592</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>224 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>256 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>544 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockPowerUp</ObjectName>
+      <Location>160 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockPowerUp</ObjectName>
+      <Location>192 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockPowerUp</ObjectName>
+      <Location>512 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BrickCoin</ObjectName>
+      <Location>0 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>HiddenBlock</ObjectName>
+      <Location>32 432</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>HiddenBlock</ObjectName>
+      <Location>576 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BrickStar</ObjectName>
+      <Location>64 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>448 304</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>480 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>512 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>544 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>576 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>608 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>640 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>672 304</Location>
+    </Item>
+    <!-- end of test area -->
+    <!--  Start Objects before first gap  -->
+    <!--  floor  -->
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>69</ObjectName>
+      <Location>800 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>15</ObjectName>
+      <Location>3072 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>64</ObjectName>
+      <Location>3648 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Floor</ObjectType>
+      <ObjectName>65</ObjectName>
+      <Location>5760 656</Location>
+    </Item>
+    <!-- end of floor -->
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>BigHill</ObjectName>
+      <Location>800 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush3</ObjectName>
+      <Location>1168 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>SmallHill</ObjectName>
+      <Location>1312 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>1312 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>1440 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockPowerUp</ObjectName>
+      <Location>1472 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>1504 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>1536 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>1568 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>1504 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>PipeS</ObjectName>
+      <Location>1696 592</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush1</ObjectName>
+      <Location>1552 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>PipeM</ObjectName>
+      <Location>2016 560</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>PipeL</ObjectName>
+      <Location>2272 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>PipeLE</ObjectName>
+      <Location>2624 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush2</ObjectName>
+      <Location>2128 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>BigHill</ObjectName>
+      <Location>2336 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush3</ObjectName>
+      <Location>2704 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>SmallHill</ObjectName>
+      <Location>2848 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>HiddenBlock</ObjectName>
+      <Location>2848 528</Location>
+    </Item>
+    <!--first gap-->
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush1</ObjectName>
+      <Location>3088 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3264 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockPowerUp</ObjectName>
+      <Location>3296 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3328 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3360 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3392 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3424 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3456 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3488 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3520 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3552 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3584 400</Location>
+    </Item>
+    <!--Second gap-->
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush2</ObjectName>
+      <Location>3664 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3712 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3744 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>3776 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>3808 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BrickCoin</ObjectName>
+      <Location>3808 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>BigHill</ObjectName>
+      <Location>3872 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BrickStar</ObjectName>
+      <Location>4032 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>4000 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>4192 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>4288 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>4384 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockPowerUp</ObjectName>
+      <Location>4288 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush3</ObjectName>
+      <Location>4240 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>4576 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>4672 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>4704 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>4736 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>4896 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>4928 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>4960 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>4992 400</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>4928 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>4960 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush2</ObjectName>
+      <Location>5200 656</Location>
+    </Item>
+    <!--start of staircase1 4x4-->
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>1</ObjectName>
+      <Location>5088 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>5120 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>3</ObjectName>
+      <Location>5152 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>5184 624</Location>
+    </Item>
+    <!--end of staircase1 4x4-->
+    <!--start of staircas2 4x4-->
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>5280 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>3</ObjectName>
+      <Location>5312 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>5344 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>1</ObjectName>
+      <Location>5376 624</Location>
+    </Item>
+    <!--end of Staircas2 4x4-->
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>BigHill</ObjectName>
+      <Location>5408 656</Location>
+    </Item>
+    <!--start of staircase3 5x4-->
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>1</ObjectName>
+      <Location>5536 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>5568 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>3</ObjectName>
+      <Location>5600 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>5632 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>5664 624</Location>
+    </Item>
+    <!--end of staircase 3 5x4-->
+    <!--Third Gap-->
+    <!--start of staircase 4 4x4-->
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>5760 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>3</ObjectName>
+      <Location>5792 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>5824 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>1</ObjectName>
+      <Location>5856 624</Location>
+    </Item>
+    <!--end of staircas-->
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush1</ObjectName>
+      <Location>5840 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>SmallHill</ObjectName>
+      <Location>5920 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>PipeS</ObjectName>
+      <Location>6016 592</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush1</ObjectName>
+      <Location>6160 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>6176 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>6208 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>ItemBlockCoin</ObjectName>
+      <Location>6240 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BreakableBlock</ObjectName>
+      <Location>6272 528</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>PipeS</ObjectName>
+      <Location>6528 592</Location>
+    </Item>
+    <!--final staircase 9-8-->
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>1</ObjectName>
+      <Location>6592 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>2</ObjectName>
+      <Location>6624 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>3</ObjectName>
+      <Location>6656 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>4</ObjectName>
+      <Location>6688 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>5</ObjectName>
+      <Location>6720 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>6</ObjectName>
+      <Location>6752 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>7</ObjectName>
+      <Location>6784 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>8</ObjectName>
+      <Location>6816 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Column</ObjectType>
+      <ObjectName>8</ObjectName>
+      <Location>6848 624</Location>
+    </Item>
+    <!--end of staircase-->
+    <!--End Game area-->
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>BigHill</ObjectName>
+      <Location>6944 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>UnbreakableBlock</ObjectName>
+      <Location>7136 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>FlagPole</ObjectName>
+      <Location>7150 336</Location>
+    </Item>
+    <Item>
+      <ObjectType>Exit</ObjectType>
+      <ObjectName>CastleExit</ObjectName>
+      <Location>7350 560</Location>
+    </Item>
+   <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Castle</ObjectName>
+      <Location>7264 496</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Bush1</ObjectName>
+      <Location>7376 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>SmallHill</ObjectName>
+      <Location>7456 656</Location>
+    </Item>
+    <!--  clouds  -->
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>1424 352</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud3</ObjectName>
+      <Location>1680 384</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud2</ObjectName>
+      <Location>1964 352</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>2608 384</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>2960 352</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud3</ObjectName>
+      <Location>3216 384</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud2</ObjectName>
+      <Location>3504 352</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>4144 384</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>4496 352</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud3</ObjectName>
+      <Location>4752 384</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud2</ObjectName>
+      <Location>5040 352</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>5680 384</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>6032 352</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud3</ObjectName>
+      <Location>6288 384</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud2</ObjectName>
+      <Location>6576 352</Location>
+    </Item>
+    <Item>
+      <ObjectType>Scenery</ObjectType>
+      <ObjectName>Cloud1</ObjectName>
+      <Location>7216 384</Location>
+    </Item>
+    <!--Enemies-->
+    
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>480 304</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>544 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>1472 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>2238 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>2560 624</Location>
+    </Item>
+     <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>2592 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>3520 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>3472 368</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>3860 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>3908 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>4768 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>4816 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>4864 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>4912 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>6368 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Goomba</ObjectName>
+      <Location>6416 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Koopa</ObjectName>
+      <Location>4128 610</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Koopa</ObjectName>
+      <Location>544 290</Location>
+    </Item>
+    <Item>
+      <ObjectType>Enemy</ObjectType>
+      <ObjectName>Koopa</ObjectName>
+      <Location>640 610</Location>
+    </Item>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,174 @@
+﻿<XnaContent>
+  <Asset Type="MyDataTypes.LevelObjectData[]">
+    <Item>
+      <ObjectType>Player</ObjectType>
+      <ObjectName>Mario</ObjectName>
+      <Location>45 0</Location>
+    </Item>  
+    <Item>
+      <ObjectType>BlueFloor</ObjectType>
+      <ObjectName>18</ObjectName>
+      <Location>0 656</Location>
+    </Item>
+    <Item>
+      <ObjectType>BlueBrickColumn</ObjectType>
+      <ObjectName>20</ObjectName>
+      <Location>0 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>BlueBrickFloor</ObjectType>
+      <ObjectName>7</ObjectName>
+      <Location>128 560</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BlueBrick</ObjectName>
+      <Location>128 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BlueBrick</ObjectName>
+      <Location>160 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BlueBrick</ObjectName>
+      <Location>192 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BlueBrick</ObjectName>
+      <Location>224 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BlueBrick</ObjectName>
+      <Location>256 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BlueBrick</ObjectName>
+      <Location>288 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>BlueBrick</ObjectName>
+      <Location>320 624</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>SidewaysPipe</ObjectName>
+      <Location>416 592</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>TPipe</ObjectName>
+      <Location>478 592</Location>
+    </Item>
+    <Item>
+      <ObjectType>Block</ObjectType>
+      <ObjectName>SidewaysPipe</ObjectName>
+      <Location>416 592</Location>
+    </Item>
+    <Item>
+      <ObjectType>PipeColumn</ObjectType>
+      <ObjectName>20</ObjectName>
+      <Location>490 626</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>135 530</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>165 530</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>195 530</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>225 530</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>255 530</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>285 530</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>315 530</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>135 490</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>165 490</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>195 490</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>225 490</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>255 490</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>285 490</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>315 490</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>165 450</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>195 450</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>225 450</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>255 450</Location>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <ObjectName>Coin</ObjectName>
+      <Location>285 450</Location>
+    </Item>
+  </Asset>
+</XnaContent>
