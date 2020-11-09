@@ -1,0 +1,758 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B509F60A-EE32-453C-9429-C1946D5FC205}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SprintZero</RootNamespace>
+    <AssemblyName>SprintZero</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AD695F884DC9843C73990BEF4EA1922199351841</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SprintZero_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BlocksRefactored\Block.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\AbstractBlockState.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\BlueBrickState.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\BlueGroundState.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\BrickBlockState.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\BrickCoinState.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\BrickStarState.cs" />
+    <Compile Include="Collision\IceballCollision\IceballBlockCollisionResponder.cs" />
+    <Compile Include="Collision\IceballCollision\IceballCollisionDetection.cs" />
+    <Compile Include="Collision\IceballCollision\IceballEnemyCollisionResponder.cs" />
+    <Compile Include="Collision\IceballCollision\IceballPipeResponder.cs" />
+    <Compile Include="Collision\FireballCollision\FireballCollisionDetection.cs" />
+    <Compile Include="Collision\FireballCollision\FireballBlockCollisionResponder.cs" />
+    <Compile Include="Collision\FireballCollision\FireballEnemyCollisionResponder.cs" />
+    <Compile Include="Collision\FireballCollision\FireballPipeResponder.cs" />
+    <Compile Include="Collision\MasterCollisionResponder.cs" />
+    <Compile Include="Commands\FireballCommand.cs" />
+    <Compile Include="Commands\UseStoredItemCommand.cs" />
+    <Compile Include="Commands\IceMarioCommand.cs" />
+    <Compile Include="Commands\PauseCommand.cs" />
+    <Compile Include="Commands\RewindCommand.cs" />
+    <Compile Include="Commands\SprintCommand.cs" />
+    <Compile Include="Commands\StartGameCommand.cs" />
+    <Compile Include="Commands\SwitchControllerCommand.cs" />
+    <Compile Include="Commands\UnwindCommand.cs" />
+    <Compile Include="Controllers\GamePadController.cs" />
+    <Compile Include="Decorator\RewindMario.cs" />
+    <Compile Include="Enemies\AbstractEnemy.cs" />
+    <Compile Include="Enemies\AbstractEnemyState.cs" />
+    <Compile Include="Enemies\EnemyUtilities\EnemyFactory.cs" />
+    <Compile Include="Enemies\EnemyUtilities\EnemyPhysicsObject.cs" />
+    <Compile Include="Enemies\EnemyUtilities\EnemySpawner.cs" />
+    <Compile Include="Enemies\GoombaStates\AbstractGoombaState.cs" />
+    <Compile Include="Enemies\KoopaStates\AbstractKoopaState.cs" />
+    <Compile Include="Enemies\KoopaStates\LeftSlidingShellState.cs" />
+    <Compile Include="Enemies\KoopaStates\RightSlidingShellState.cs" />
+    <Compile Include="GameStates\Level2State.cs" />
+    <Compile Include="GameStates\MainMenuState.cs" />
+    <Compile Include="Iceball\IceballExplosion.cs" />
+    <Compile Include="Iceball\IceballObject.cs" />
+    <Compile Include="Iceball\IceballPhysicsObject.cs" />
+    <Compile Include="Fireball\FireballExpolsion.cs" />
+    <Compile Include="Fireball\FireballPhysicsObject.cs" />
+    <Compile Include="FlagPoles\FlagPole.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\GroundBlockState.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\HiddenItemBlockState.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\ItemBlockCoinState.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\ItemBlockUsedState.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\UnbreakableBlockState.cs" />
+    <Compile Include="Collision\CollisionSideDetector.cs" />
+    <Compile Include="Collision\EnemyCollisionWithEnvironmentResponder.cs" />
+    <Compile Include="Collision\ItemCollisionWithEnvironmentResponder.cs" />
+    <Compile Include="Collision\PipeCollisionResponder.cs" />
+    <Compile Include="Collision\SideDetectors\BottomCollision.cs" />
+    <Compile Include="Collision\SideDetectors\TopCollision.cs" />
+    <Compile Include="Collision\SideDetectors\LeftCollision.cs" />
+    <Compile Include="Collision\SideDetectors\RightCollision.cs" />
+    <Compile Include="Decorator\ShrunkenMario.cs" />
+    <Compile Include="Exits\CastleDoor.cs" />
+    <Compile Include="Exits\IExit.cs" />
+    <Compile Include="GameStates\AbstractGameState.cs" />
+    <Compile Include="GameStates\DeathScreenState.cs" />
+    <Compile Include="GameStates\PipeTransitionState.cs" />
+    <Compile Include="GameStates\EndOfGameState.cs" />
+    <Compile Include="GameStates\PauseState.cs" />
+    <Compile Include="GameStates\GameOverState.cs" />
+    <Compile Include="GameStates\IGameState.cs" />
+    <Compile Include="GameStates\LevelOneOneState.cs" />
+    <Compile Include="GameStates\LevelOneOneUnderworldState.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="HUD\FloatingStat.cs" />
+    <Compile Include="HUD\GameStats.cs" />
+    <Compile Include="Interfaces\IItemPhysicsObject.cs" />
+    <Compile Include="Interfaces\IHittable.cs" />
+    <Compile Include="BlocksRefactored\ObstacleHitBox\ObstacleCombinedHitBox.cs" />
+    <Compile Include="Interfaces\ICollision.cs" />
+    <Compile Include="Interfaces\IEnemyPhysicsObject.cs" />
+    <Compile Include="Interfaces\IMarioPhysicsObject.cs" />
+    <Compile Include="Interfaces\IPipe.cs" />
+    <Compile Include="Items\AbstractItem.cs" />
+    <Compile Include="Fireball\FireballObject.cs" />
+    <Compile Include="Items\IceFlower.cs" />
+    <Compile Include="Items\ItemPhysicsObject.cs" />
+    <Compile Include="Levelmanager\SoundFactory.cs" />
+    <Compile Include="Mario\MarioPhysicsObject.cs" />
+    <Compile Include="Mario\MarioStates\ClimbingIceMarioState.cs" />
+    <Compile Include="Mario\MarioStates\ClimbingFireMarioState.cs" />
+    <Compile Include="Mario\MarioStates\ClimbingSmallMarioState.cs" />
+    <Compile Include="Mario\MarioStates\ClimbingBigMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftBigSlidingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftIceCrouchingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftIceFallingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftIceJumpingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftIceRunningMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftIceSlidingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftFireSlidingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftIceStandingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftSmallSlidingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightBigSlidingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightIceCrouchingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightIceFallingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightFireFallingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftFireFallingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftSmallFallingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftBigFallingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightBigFallingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightIceJumpingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightIceRunningMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightIceSlidingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightFireSlidingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightIceStandingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightSmallFallingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightSmallSlidingMarioState.cs" />
+    <Compile Include="ParticleEffects\Particle.cs" />
+    <Compile Include="ParticleEffects\ParticleEngine.cs" />
+    <Compile Include="Pipes\AbstractPipe.cs" />
+    <Compile Include="Pipes\Pipe.cs" />
+    <Compile Include="Collision\BlockCollisionResponder.cs" />
+    <Compile Include="Collision\CollisionDetection.cs" />
+    <Compile Include="Collision\EnemyCollisionResponder.cs" />
+    <Compile Include="Collision\ItemCollisionResponder.cs" />
+    <Compile Include="Commands\IdleMarioCommand.cs" />
+    <Compile Include="Commands\BigMarioCommand.cs" />
+    <Compile Include="Commands\DownCommand.cs" />
+    <Compile Include="Commands\ExitCommand.cs" />
+    <Compile Include="Commands\FireMarioCommand.cs" />
+    <Compile Include="Commands\LeftCommand.cs" />
+    <Compile Include="Commands\MarioDieCommand.cs" />
+    <Compile Include="Commands\ResetCommand.cs" />
+    <Compile Include="Commands\RightCommand.cs" />
+    <Compile Include="Commands\SmallMarioCommand.cs" />
+    <Compile Include="Commands\UpCommand.cs" />
+    <Compile Include="Decorator\StarMario.cs" />
+    <Compile Include="Enemies\Goomba.cs" />
+    <Compile Include="Enemies\GoombaStates\FlippedGoombaState.cs" />
+    <Compile Include="Enemies\GoombaStates\LeftMovingGoombaState.cs" />
+    <Compile Include="Enemies\GoombaStates\RightMovingGoombaState.cs" />
+    <Compile Include="Enemies\GoombaStates\StompedGoombaState.cs" />
+    <Compile Include="Enemies\Koopa.cs" />
+    <Compile Include="Enemies\KoopaStates\FlippedKoopaState.cs" />
+    <Compile Include="Enemies\KoopaStates\LeftMovingKoopaState.cs" />
+    <Compile Include="Enemies\KoopaStates\RightMovingKoopaState.cs" />
+    <Compile Include="Enemies\KoopaStates\StompedKoopaState.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="Interfaces\IBlock.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Interfaces\IBlockState.cs" />
+    <Compile Include="Interfaces\IController.cs" />
+    <Compile Include="Interfaces\IEnemy.cs" />
+    <Compile Include="Interfaces\IGameObject.cs" />
+    <Compile Include="Interfaces\IEnemyState.cs" />
+    <Compile Include="Interfaces\IItem.cs" />
+    <Compile Include="Interfaces\IMario.cs" />
+    <Compile Include="Interfaces\IMarioState.cs" />
+    <Compile Include="Interfaces\ISprite.cs" />
+    <Compile Include="Controllers\KeyboardController.cs" />
+    <Compile Include="Items\FireFlower.cs" />
+    <Compile Include="Items\GreenMushroom.cs" />
+    <Compile Include="Items\Coin.cs" />
+    <Compile Include="Items\ItemFactory.cs" />
+    <Compile Include="Items\SpinningCoin.cs" />
+    <Compile Include="Items\Star.cs" />
+    <Compile Include="Items\RedMushroom.cs" />
+    <Compile Include="Levelmanager\Level.cs" />
+    <Compile Include="Levelmanager\LevelManager.cs" />
+    <Compile Include="Mario\Mario.cs" />
+    <Compile Include="Mario\MarioStates\DeadMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftBigCrouchingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftFireCrouchingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightBigCrouchingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightFireCrouchingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftFireJumpingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftBigJumpingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightFireJumpingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightFireStandingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightFireRunningMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftFireStandingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftFireRunningMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightBigJumpingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftSmallJumpingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightSmallJumpingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightSmallRunningMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftSmallRunningMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightBigRunningMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftBigRunningMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftBigStandingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\LeftSmallStandingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightBigStandingMarioState.cs" />
+    <Compile Include="Mario\MarioStates\RightSmallStandingMarioState.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Pipes\PipeExtension.cs" />
+    <Compile Include="Pipes\PipeLargeEnterable.cs" />
+    <Compile Include="Pipes\PipeLarge.cs" />
+    <Compile Include="Pipes\PipeMedium.cs" />
+    <Compile Include="Pipes\SidewaysPipe.cs" />
+    <Compile Include="Pipes\TPipe.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenCamera\PlayerOneCamera.cs" />
+    <Compile Include="Sprites\BlockSprites\BlueBrickBlockSprite.cs" />
+    <Compile Include="Sprites\BlockSprites\BlueFloorBlock.cs" />
+    <Compile Include="Sprites\EnemySprites\ShellSprite.cs" />
+    <Compile Include="Sprites\ItemSprites\IceballExplosionSprite.cs" />
+    <Compile Include="Sprites\ItemSprites\FireballExplosionSprite.cs" />
+    <Compile Include="Sprites\ItemSprites\IceballSprite.cs" />
+    <Compile Include="Sprites\ItemSprites\FireballSprite.cs" />
+    <Compile Include="Sprites\ItemSprites\IceFlowerSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\IceClimbingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftIceJumpingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftIceRunningMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftIceStandingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftIceCrouchingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightIceCrouchingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightIceJumpingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightIceRunningMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightIceStandingMarioSprite.cs" />
+    <Compile Include="Sprites\PipeSprites\PipeExtensionSprite.cs" />
+    <Compile Include="Sprites\PipeSprites\SidewaysPipeSprite.cs" />
+    <Compile Include="Sprites\PipeSprites\TPipeSprite.cs" />
+    <Compile Include="Sprites\ScenerySprites\FlagPoleSprite.cs" />
+    <Compile Include="BlocksRefactored\BlockStates\ItemBlockPowerUpState.cs" />
+    <Compile Include="Sprites\EnemySprites\FlippedGoombaSprite.cs" />
+    <Compile Include="Sprites\EnemySprites\FlippedKoopaSprite.cs" />
+    <Compile Include="Sprites\EnemySprites\MovingGoombaSprite.cs" />
+    <Compile Include="Sprites\EnemySprites\MovingKoopaSprite.cs" />
+    <Compile Include="Sprites\EnemySprites\RightMovingKoopaSprite.cs" />
+    <Compile Include="Sprites\EnemySprites\StompedGoombaSprite.cs" />
+    <Compile Include="Sprites\EnemySprites\StompedKoopaSprite.cs" />
+    <Compile Include="Sprites\ExitSprites\CastleDoorSprite.cs" />
+    <Compile Include="Sprites\ItemSprites\CoinSprite.cs" />
+    <Compile Include="Sprites\ItemSprites\FireFlowerSprite.cs" />
+    <Compile Include="Sprites\ItemSprites\GreenMushroomSprite.cs" />
+    <Compile Include="Sprites\ItemSprites\RedMushroomSprite.cs" />
+    <Compile Include="Sprites\ItemSprites\SpinningCoinSprite.cs" />
+    <Compile Include="Sprites\ItemSprites\StarSprite.cs" />
+    <Compile Include="Sprites\PipeSprites\PipeLargeSprite.cs" />
+    <Compile Include="Sprites\PipeSprites\PipeMediumSprite.cs" />
+    <Compile Include="Sprites\ScenerySprites\BigHillSprite.cs" />
+    <Compile Include="Sprites\ScenerySprites\Bush1Sprite.cs" />
+    <Compile Include="Sprites\ScenerySprites\Bush2Sprite.cs" />
+    <Compile Include="Sprites\ScenerySprites\Bush3Sprite.cs" />
+    <Compile Include="Sprites\ScenerySprites\CastleSprite.cs" />
+    <Compile Include="Sprites\ScenerySprites\Cloud1Sprite.cs" />
+    <Compile Include="Sprites\ScenerySprites\Cloud2Sprite.cs" />
+    <Compile Include="Sprites\ScenerySprites\Cloud3Sprite.cs" />
+    <Compile Include="Sprites\ScenerySprites\FlagSprite.cs" />
+    <Compile Include="Sprites\ScenerySprites\SmallHillSprite.cs" />
+    <Compile Include="Sprites\BlockSprites\BreakableBlockSprite.cs" />
+    <Compile Include="Sprites\BlockSprites\BrokenBlockSprite.cs" />
+    <Compile Include="Sprites\BlockSprites\GroundBlockSprite.cs" />
+    <Compile Include="Sprites\BlockSprites\HiddenBlockSprite.cs" />
+    <Compile Include="Sprites\BlockSprites\ItemBlockEmptySprite.cs" />
+    <Compile Include="Sprites\BlockSprites\ItemBlockSprite.cs" />
+    <Compile Include="Sprites\PipeSprites\PipeSprite.cs" />
+    <Compile Include="Sprites\BlockSprites\UnbreakableBlockSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftBigCrouchingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftFireJumpingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftFireRunningMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightBigCrouchingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftBigJumpingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightBigJumpingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftBigRunningMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightBigRunningMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftBigStandingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightBigStandingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftFireCrouchingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightFireJumpingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightFireRunningMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightFireCrouchingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftFireStandingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightFireStandingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftSmallJumpingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightSmallJumpingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftSmallRunningMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightSmallRunningMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\DeadMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\LeftSmallStandingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\RightSmallStandingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\FireClimbingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\BigClimbingMarioSprite.cs" />
+    <Compile Include="Sprites\MarioSprites\SmallClimbingMarioSprite.cs" />
+    <Content Include="CodeReviews\AJ\Sprint5QualityCodeReview.txt" />
+    <Content Include="CodeReviews\AJ\Sprint5ReadabilityReview.txt" />
+    <Content Include="CodeReviews\AJ\Sprint6QualityReview.txt" />
+    <Content Include="CodeReviews\AJ\Sprint6ReadabilityReview.txt" />
+    <Content Include="CodeReviews\Jalen\Sprint5QualityCodeReview.txt" />
+    <Content Include="CodeReviews\Jalen\Sprint5ReadabilityReview.txt" />
+    <Content Include="CodeReviews\Jalen\Sprint6QualityReview.txt" />
+    <Content Include="Content\Images\allSprites.png" />
+    <Content Include="Content\SFX\smb_stage_clear.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\time-travel.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\time-travel.wma">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\underworld.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\underworld.wma">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Levelmanager\Level2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Levelmanager\sprint4Level.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Levelmanager\Sprint5Underworld.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CodeReviews\Kyle\qualityreview6.txt" />
+    <Content Include="CodeReviews\Kyle\ReadablityReview5.txt" />
+    <Content Include="CodeReviews\ReadMe.txt" />
+    <Content Include="Content\bin\Windows\Content\Themes\hurryTheme.wma" />
+    <Content Include="Content\bin\Windows\Content\Themes\maintheme.wma" />
+    <Content Include="Content\bin\Windows\Content\Themes\starman.wma" />
+    <Content Include="Content\circle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\diamond.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\1-up.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\breakblock.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\bump.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\coin.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\fireball.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\flagpole.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\jumpsmall.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\jumpsuper.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\kick.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\mariodie.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\pause.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\pipe.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\powerup.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\powerup_appears.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\SFX\stomp.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\spiral.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\square.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\star.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\gameover.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\gameover.wma">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\hurryTheme.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\hurryTheme.wma">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\maintheme.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\maintheme.wma">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\starman.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Themes\starman.wma">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Content\.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\.mgstats">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\allSprites.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\allSprites.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\bin\Windows\Content\allSprites.xnb" />
+    <None Include="Content\bin\Windows\Content\circle.xnb" />
+    <None Include="Content\bin\Windows\Content\Coin.xnb" />
+    <None Include="Content\bin\Windows\Content\enemies.xnb" />
+    <None Include="Content\bin\Windows\Content\FireFlower.xnb" />
+    <None Include="Content\bin\Windows\Content\font.xnb" />
+    <None Include="Content\bin\Windows\Content\GreenMushroom.xnb" />
+    <None Include="Content\bin\Windows\Content\Images\allSprites.xnb" />
+    <None Include="Content\bin\Windows\Content\RedMushroom.xnb" />
+    <None Include="Content\bin\Windows\Content\SFX\1-up.xnb" />
+    <None Include="Content\bin\Windows\Content\SFX\breakblock.xnb" />
+    <None Include="Content\bin\Windows\Content\SFX\bump.xnb" />
+    <None Include="Content\bin\Windows\Content\SFX\coin.xnb" />
+    <None Include="Content\bin\Windows\Content\SFX\fireball.xnb" />
+    <None Include="Content\bin\Windows\Content\SFX\jumpsmall.xnb" />
+    <None Include="Content\bin\Windows\Content\SFX\jumpsuper.xnb" />
+    <None Include="Content\bin\Windows\Content\SFX\kick.xnb" />
+    <None Include="Content\bin\Windows\Content\SFX\pause.xnb" />
+    <None Include="Content\bin\Windows\Content\SFX\powerup.xnb" />
+    <None Include="Content\bin\Windows\Content\SFX\powerup_appears.xnb" />
+    <None Include="Content\bin\Windows\Content\Star.xnb" />
+    <None Include="Content\bin\Windows\Content\Themes\hurryTheme.xnb" />
+    <None Include="Content\bin\Windows\Content\Themes\maintheme.xnb" />
+    <None Include="Content\bin\Windows\Content\Themes\starman.xnb" />
+    <None Include="Content\bin\Windows\enemies.xnb" />
+    <None Include="Content\circle.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\circle.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\diamond.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\diamond.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\File.spritefont">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\font.mgcontent" />
+    <None Include="Content\font.xnb" />
+    <None Include="Content\Images\allSprites.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Images\allSprites.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\obj\Windows\.mgcontent" />
+    <None Include="Content\obj\Windows\.mgstats" />
+    <None Include="Content\obj\Windows\Content\.mgcontent" />
+    <None Include="Content\obj\Windows\Content\.mgstats" />
+    <None Include="Content\obj\Windows\Content\allSprites.mgcontent" />
+    <None Include="Content\obj\Windows\Content\circle.mgcontent" />
+    <None Include="Content\obj\Windows\Content\Coin.mgcontent" />
+    <None Include="Content\obj\Windows\Content\enemies.mgcontent" />
+    <None Include="Content\obj\Windows\Content\FireFlower.mgcontent" />
+    <None Include="Content\obj\Windows\Content\font.mgcontent" />
+    <None Include="Content\obj\Windows\Content\GreenMushroom.mgcontent" />
+    <None Include="Content\obj\Windows\Content\Images\allSprites.mgcontent" />
+    <None Include="Content\obj\Windows\Content\RedMushroom.mgcontent" />
+    <None Include="Content\obj\Windows\Content\SFX\1-up.mgcontent" />
+    <None Include="Content\obj\Windows\Content\SFX\breakblock.mgcontent" />
+    <None Include="Content\obj\Windows\Content\SFX\bump.mgcontent" />
+    <None Include="Content\obj\Windows\Content\SFX\coin.mgcontent" />
+    <None Include="Content\obj\Windows\Content\SFX\fireball.mgcontent" />
+    <None Include="Content\obj\Windows\Content\SFX\jumpsmall.mgcontent" />
+    <None Include="Content\obj\Windows\Content\SFX\jumpsuper.mgcontent" />
+    <None Include="Content\obj\Windows\Content\SFX\kick.mgcontent" />
+    <None Include="Content\obj\Windows\Content\SFX\pause.mgcontent" />
+    <None Include="Content\obj\Windows\Content\SFX\powerup.mgcontent" />
+    <None Include="Content\obj\Windows\Content\SFX\powerup_appears.mgcontent" />
+    <None Include="Content\obj\Windows\Content\Star.mgcontent" />
+    <None Include="Content\obj\Windows\Content\Themes\hurryTheme.mgcontent" />
+    <None Include="Content\obj\Windows\Content\Themes\maintheme.mgcontent" />
+    <None Include="Content\obj\Windows\Content\Themes\starman.mgcontent" />
+    <None Include="Content\obj\Windows\enemies.mgcontent" />
+    <None Include="Content\SFX\1-up.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\1-up.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\breakblock.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\breakblock.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\bump.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\bump.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\coin.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\coin.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\fireball.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\fireball.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\flagpole.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\flagpole.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\jumpsmall.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\jumpsmall.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\jumpsuper.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\jumpsuper.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\kick.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\kick.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\mariodie.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\mariodie.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\pause.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\pause.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\pipe.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\pipe.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\powerup.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\powerup.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\powerup_appears.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\powerup_appears.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\smb_stage_clear.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\smb_stage_clear.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\stomp.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\SFX\stomp.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\spiral.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\spiral.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\square.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\square.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\star.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\star.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\gameover.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\gameover.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\hurryTheme.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\hurryTheme.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\maintheme.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\maintheme.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\starman.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\starman.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\time-travel.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\time-travel.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\underworld.mgcontent">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Themes\underworld.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="SprintZero_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Windows\Content\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
