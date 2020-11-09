@@ -1,0 +1,27 @@
+﻿Author of Review: AJ Erdaty
+Date of Review: 3/8/19
+Sprint #: 4
+Name of File: PlayerOneCamera.cs
+Author of File: Kyle Van-Fleet
+Time Taken: 15
+
+Naming: Pretty Good
+ Most of these variables have very intuitive names (LeftBound, RightBound, View) but the ViewPoint variable confuses me a little bit.
+ Looking at it, I'm not sure exactly what it does or what its purpose is. Even after looking at the code, I'm having trouble deciphering
+ what it does. It starts at zero and constantly has positive values subtracted from it, but I'm not sure what a point with a very
+ negative coordinate does for the camera. It is passed into the matrix so I assume it tells the matrix where to go, but I don't
+ get why it has such a negative value. Consider changing the Vector2's name from 'marioPos' to 'playerPos'. The class seems very general
+ and easy to use in a lot of different applications, marioPos looks out of place here.
+
+Explaining what is being done: Pretty Good
+ Viewpoint confuses me, and I feel that it is vital to the camera operation. It is the only argument that we pass to the matrix translation
+ so I think that it tells the matrix where to move to, but I still don't get how it can have a very negative value and this can work. Setvting
+ the view is very intuitive and with the other good variables names it makes a lot of sense. If mario goes to the right past a certain point,
+ the camera moves to the right. Overall, I understand the general idea, but I'm having trouble picturing what the matrix is doing exactly.
+
+Additional Notes:
+ -This is a singleton, and I like that a lot. Turning our Game class into a singleton was a fantastic decision that has made accessing
+  important parts of the game a lot easier. I'm glad we started with this as a singleton.
+ -Overall, the class is very concise. It is initialized, it updates based on Mario's movement, and it resets when Mario dies to the beginning
+  of the level. This class has very high cohesion.
+ -This class has extremely low coupling, relying on absolutely nothing that is specific to our game. It just uses ints, vectors, and matrices.

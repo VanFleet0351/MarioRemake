@@ -1,0 +1,33 @@
+﻿Author: Kyle Van Fleet
+Date: 4//19
+Sprint: 5
+File under review: 
+Author of file:  
+Time spent on review: ~30 mins
+
+Naming: very good
+- All the class variable have clear names the describe their purpose. allSpriteSheet, mario, collisionHandler,
+levelManager, frame, RightCommand, soundPlayed and gameTime are what they appear to be.
+- Method names are also clear and do what the name would lead you to belive they do.
+- it doesn't appear that any new variables are introduced inside the methods 
+
+Explanation of what is taking place within the class: Good
+- Most everything that takes place in this class is pretty clear and is described by the method names.
+- The only bit that isn't obvious is the logic inside the Update() method. However it isn't difficult 
+to see what is going on.
+- the first if statement is a command on mario based on how many frames have been run since the game entered
+this state.
+- The else if controlling mario based on his location on the map and starting a song if it hasn't already
+started playing.
+- the last if stops the sound after 500 frames have been run.
+- frame is incremented to reflect a new frame has been created and the player is updated.
+
+Additional Notes:
+- The reset method doesnt actual do anything in this class. What it probably should do is restart
+level 1-1. There is currently now way to exit this state.
+- the if else-if inside update is a little unclear because the if and else if are checking for different 
+values(frame and position). I think this could be written as 2 different if statements.
+- I think it would be a little easier to under the update method if the time based logic used the gametime
+instead of frames. It might be necessary to base mario.climb() of frames but I really think that the song
+should use actual time instead of frame. Time elapsed can be found using either gameTime or I think there
+is a way to find out how long a song has been playing in the MediaPlayer class, not sure though.

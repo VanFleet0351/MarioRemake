@@ -1,0 +1,11 @@
+﻿Author: Jalen Soat
+Date: 2/6/19
+Sprint: 2
+File under review: FlippedKoopaState.cs
+Author of file: Kyle Van-Fleet
+
+Comments on Quality: The code does not appear to generate any errors. The variables are defined well before any methods, and 
+					the code follows all guidelines for a standard state. It is well laid out and consistent with the rest of 
+					the state classes within the project.
+
+Suggestions for improvement:	Define the variables before the constructor, but assign the values within the constructor itself.

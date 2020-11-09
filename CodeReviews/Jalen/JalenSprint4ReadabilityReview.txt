@@ -1,0 +1,30 @@
+﻿Author: Jalen Soat
+Date: 3/8/19
+Sprint: 4
+File under review: MarioPhysicsObject.cs
+Author of file: AJ Erdaty
+Time spent on review: 15 minutes
+
+Naming: Good
+	- Though there are many variables, most have enough clarity within the name to give an understanding of their purpose
+	The only variables that may cause some confusion are dx, dy, and dt, though a simple understanding of calculus would
+	allow the user to understand these variables.
+	- The names of the methods are all good. They clearly explain the purpose of the method within Mario's physics without
+	being too wordy.
+	- The variable jumpTick could also cause some confusion. Possibly change it to jumpTimer or jumpFrame to provide more
+	clarity. 
+
+Explanation of what is taking place within the class: Not Very Clear
+	- There are a great deal of variables declared immediately, and many of which are given arbitrary values. While it's clear
+	that these were decided through trial and error, adding an explanation as to the purpose of some of them would be helpful
+	for someone else looking into the class trying to decipher what is happening. 
+	- There are some notes made throughout the class that explain (e.g. the comments relating to accelaration and momentum), but 
+	there are definitely not enough notes for someone reading the class to easily understand it all quickly. An outsider
+	would likely need an explanation for some of the methods within the class.
+	- Overall, while it's clear that this class functions well (as seen through playing the game), the readibility of this class
+	leaves a lot of confusion.
+
+Additional Notes:
+	- This class will definitely require some refactoring before the next sprint begins. The amount of effort put in to the class
+	is clearly very high, and it's clear that it took a great deal of time to figure out. The only changes that will be made will
+	be for readability's sake only, as the code quality is very high. 

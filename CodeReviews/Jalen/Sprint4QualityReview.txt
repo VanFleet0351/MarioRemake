@@ -1,0 +1,23 @@
+﻿Author: Jalen Soat
+Date: 3/25/19
+Sprint: 4
+File under review: FireballObject.cs
+Author of file: AJ Erdaty
+Time spent on review: 15 minutes
+
+Comments on Quality: 
+
+Coupling: Low
+-This class is dependent on only FireballSprite, FireballPhysicsObject, ParticleEngine, and SoundFactory, all of which are necessary for the class
+-There do not appear to be any unncessary dependencies
+-Having only three dependencies (one for sprites, one for particles, and one for physics) makes sense in the context of this class,
+so nothing should be changed here.
+
+Cohesion: High
+-The purpose of this class is very clear and straightforward
+-The class does not try to do to much and has a one purpose and one purpose only
+-There is one unnecessary method, but nothing else not needed within this class, so not much else can be said on the topic of cohesion
+
+Suggestions for improvement: 
+-Because there is no side collision for fireballs (they just destroy when colliding with an object), that method does not need to exist within the
+class. Other than that, the class is concise and written well. Nothing else needs to be changed within the class.

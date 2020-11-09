@@ -1,0 +1,27 @@
+﻿Author: Kyle
+Date: 4/21/2019
+Sprint: 6
+File under review: MainMenuState.cs
+Author of file: AJ
+
+Comments on Quality:
+
+Coupling: low, loose could be lower and looser though
+-Most of the Objects used in this class are necessary for the functionality
+of this class.
+- If the levelManager was used to load in all the objects on the screen we could
+reduce coupling with all of the different sprite objects used in draw.
+
+
+Cohesion: High
+- Cohesion is pretty high, all the class does is load in objects for the screen
+and display them.
+- It also calls a method to play a song and it updates the keyboard. These 2 thing 
+don't do much to take away from the cohesion and if they were removed it might 
+reduce cohesion and increase coupling else where.
+
+Hypothetical changes:
+- by using the levelManger and loading in a XML with all the objects and there locations
+would remove all but 5 lines of the code in the draw method.
+- That being said I feel that it might've taken just as long if not longer to 
+create the xml file if not already familar with XML

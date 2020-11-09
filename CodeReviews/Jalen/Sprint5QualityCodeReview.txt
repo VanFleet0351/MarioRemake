@@ -1,0 +1,29 @@
+﻿Author: Jalen
+Date: 4/8/2019
+Sprint: 5
+File under review: EndOfGameState.cs
+Author of file: AJ
+
+Comments on Quality:
+
+Coupling: medium/low
+- This class has quite a few dependencies that are used within it, though all of them appear to be necessary
+- The class references many classes of the game (camera, enemy spawner, mario, collision). It's likely that this State could be
+separated into multiple classes to lower coupling
+- Many parts of mario are modified within this class (state, physics object, position), which is not ideal
+- Each dependency has a clear purpose within the class, however the use of this many dependencies clutters the class and raises coupling
+
+
+Cohesion: medium/high
+- There are many methods here, but they are all inherited from the Abstract Game State class, so this is consistent throughout
+all game states
+- The purpose of this class is relatively clear (end the game). However, so much else is handled within the update method, making its
+actual functionality somewhat less clear.
+
+Additional Notes
+- The variable used to determine if the level has been completed is "soundPlayed", which could very likely be changed to more accurately reflect
+what its purpose is
+
+Hypothetical changes:
+- Suppose the level needed to be made longer or shorter for some reason. You'd have to go in and manually edit the coordinates for the end
+of the level. To fix this, magic numbers could be removed and turned into a variable within the level itself. 

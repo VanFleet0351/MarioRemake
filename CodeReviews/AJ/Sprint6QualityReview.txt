@@ -1,0 +1,27 @@
+﻿Author: AJ
+Date: 4/21/2019
+Sprint: 6
+File under review: RewindMario.cs
+Author of file: Kyle Van-Fleet
+Time: 15 minutes
+
+Coupling: Medium
+This is a necessary evil for Mario as a whole. The RewindMario decorator has to be coupled to everything
+that Mario is coupled to, which is a bit. It knows about the Items, LevelManager, Player, and ScreenCamera.
+None of these are questionable attachments, but Mario is coupled to them nonetheless.
+
+Cohesion: High
+Each method that the decorator overrides has a purpose. Update updates RewindMario while he is still
+rewinding. RewindPowerUps keeps track of which items that Mario has consumed and respawns them as he
+loses his powers during the rewind. Unwind makes Mario stop rewinding and sets time back to normal.
+
+Additional Notes: 
+Making this a decorator is a good idea. Because it is a decorator we don't have to fill in all of the
+logic for things not related specifically to the RewindPower. All of the logic for Rewind gets trapped
+in this one class. That's good design.
+
+Hypothetical Changes:
+If we wanted to rewind the enemies as well, then we'd need a stack of gameStates or a stack of states
+for each enemy similar to the stack of states (Past) for Mario. This change would not be difficult to
+implement, but it would increase coupling as we'd be calling rewind on the Enemies in the RewindMario
+Update method. To decrease coupling, we could just make a RewindGameState that rewinds everything.

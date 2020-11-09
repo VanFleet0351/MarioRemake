@@ -1,0 +1,25 @@
+﻿Author: Jalen Soat
+Date: 2/25/2019
+Sprint: 3
+File under review: MoveMarioToCursorCommand.cs
+Author of file: AJ
+Time: 15 Minutes
+
+Comments on Quality: 
+
+Coupling: Low
+This class has 2 dependencies, and that is Icommand and the game. Both of these are necessary. The ICommand interface
+is extended by the class, as it is a command itself. This allows for more organization amongst commands. The game is
+necessary, as it cocntains the mario class that is being moved. No other depencies exist within the class, resulting
+in a low dependency.
+
+Cohesion: High
+This class has one specialized purpose, and that is exactly what the name says it does. It moves mario to the mouse
+via a click. It handles its purpose well and does not try to do anything outside of this scope, so the cohesion is
+high.
+
+Suggestions for improvement: 
+Possibly rename the variables to something more specific instead of x and y (possible marioXPosition etc). Additionally,
+there are many random numbers within the class with no explanation as to why they are chosen (there's a 20 and a 50 with 
+no reasoning behind them). Possibly add an explanation behind the loops or assign the numbers to variables to explain them
+and make it more understandable.

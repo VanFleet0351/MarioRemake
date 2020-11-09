@@ -1,0 +1,23 @@
+﻿Author: AJ
+Date: 4/3/2019
+Sprint: 5
+File under review: FloatingStat.cs
+Author of file: Kyle Van-Fleet
+Time: 7 minutes
+
+Naming: Good
+-The name of the file is concise and says everything about what it is. 
+-It's the floating stat that is displayed when you gain points
+
+Explanation of what is happening:
+-very self explanatory code, well-written
+-string StatValue is what will be written, very easy to tell this with the Draw method
+-Vector2 PositionOnScreen is where the StatValue will be written, also very easy to tell this with the Draw method
+-lifetime lets the floating stat be around for 60 updates, or about one second, easy to tell what it does in the update method
+-also in the update method, easy to see how the stat is moving every update
+-everything is very concise, no extra or repeated code anywhere
+
+Additional Notes:
+-extremely high cohesion and low coupling
+-all it does is create and draw one stat in the HUD
+-only coupling is to XNA framework for the Vector2 class, which is fantastic

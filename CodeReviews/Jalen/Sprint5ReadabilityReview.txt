@@ -1,0 +1,22 @@
+﻿Author: Jalen
+Date: 4/3/2019
+Sprint: 5
+File under review: EndOfGameState.cs
+Author of file: AJ Erdaty
+Time: 15 minutes
+
+Naming: Good
+-The names of the variables all make sense and are relevant to their uses
+-The names of the methods are all inherited, but are good nonetheless. Each one has a clear purpose.
+
+Explanation of what is happening: Okay
+-Uses a few arbitrary number values here and there with no explanation on their purpose
+-Easy to follow the train of thought within the methods. Clear flow of logic within the Update method.
+-Many of the uses of the variables are self-explanatory thanks to their names. Variables like "soundPlayed" and "RightCommand" have 
+clear functionality that needs no explanation
+-Code is concise and not full of extra lines -- easy to follow
+
+Additional Notes:
+-Cohesion is very high but coupling is not as low as it should idealy be
+-Functionality of the class is clear. Used to end game and does so well
+-Relies on many other classes in its implementation. Hard to tell if this is necessary.

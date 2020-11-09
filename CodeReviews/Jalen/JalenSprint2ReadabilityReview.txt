@@ -1,0 +1,27 @@
+﻿Author: Jalen Soat
+Date: 2/6/19
+Sprint: 2
+Original File under review: LeftBigHoldingMarioState.cs (NO LONGER EXISTS)
+New File Under Review: LeftBigRunningMarioSprite.cs
+Author of file: AJ Erdaty
+Time spent on review: 30 minutes
+
+Naming: 
+	- The currentFrame variable makes sense, but cyclelength could use a bit more of an explanation behind it. 
+	When cyclelength is utilized within the Draw method, it's not completely clear as to what it is used for, 
+	so the naming could be improved (spriteFrameLength possibly). The variables source and destination could 
+	be improved to be more specific, possible spriteSource and destinationOnPage.
+	- The other method names are specific enough, as not much more than Draw and Update are needed within a sprite
+	class. The methods are self-explanatory in their uses.
+
+Explanation of what is taking place within the class:
+	- The draw method has no explanation of what is taking place. After looking at the method (due to my familiarity with
+	this project), I can tell what is taking place within the class, but overall it appears confusing at first glance. Maybe
+	include an explanation as to what is happening within the method in a comment beforehand.
+	- The update method does not have any comments, though it does not need any. It is just moving through the cycle and reseting the
+	current frame at the end, and anyone familiar with basic programming can understand that.
+
+Additional Notes:
+	- The numbers within the rectangles seem rather random, so an explanation as to where they come from may be helpful to an outside
+	reader. Possibly speak to what sprite page the sources are being drawn from, so a user can reference that page themselves
+	- Possibly explain why the cyclelength is set to 60 and the reasoning behind the division/multiplication within the draw method. 

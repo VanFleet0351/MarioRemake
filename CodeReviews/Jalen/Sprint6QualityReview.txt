@@ -1,0 +1,25 @@
+﻿Author: Jalen
+Date: 4/21/2019
+Sprint: 6
+File under review: IceballObject.cs
+Author of file: AJ
+Time: 10 minutes
+
+Coupling: Low
+This class only makes use of its designed "explosion" and "physicsobject" classes, as well as a particle system. 
+All of these are necessary for the purpose of this class. 
+
+Cohesion: High
+Each method in the class has a clear purpose and does not try to do too much. The entire goal of the class is clear 
+(as it just functions as the base object class for iceballs), and removing methods or putting them into
+separate classes would not help cohesion and would overcomplicate things.
+
+Additional Notes: 
+This class does a good job following the same conventions that have been used throughout the project for similar objects.
+It's clear, concise, and does not have any unnecessary comments or information within it. Additionally, the naming 
+of the variables and classes are all good as well.
+
+Hypothetical Changes:
+If other powerups with similar physics were to be added (such as an acid  ball or something of the sort), we'd have to 
+write 3 new classes all over again in the exact same manner. Because iceball and fireball have nearly identical properties, 
+they likely could have just used a common interface (which would make adding another one easier in the future as well).

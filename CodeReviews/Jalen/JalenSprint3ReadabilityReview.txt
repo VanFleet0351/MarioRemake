@@ -1,0 +1,24 @@
+﻿Author: Jalen Soat
+Date: 2/20/19
+Sprint: 3
+File under review: CastleSprite.cs
+Author of file: Steven Nichols
+Time spent on review: 30 minutes
+
+Naming: Good
+	- The destination variable could be more clear to signify that it is the location on the screen. However, this variable name
+	is used throughout the entire project, so changing it for one class would not be smart
+	- The use of a getter and setter for position is smart, as it will allow the variable to be redefined later on.
+	- sizeX and sizeY are also smart variable names, as they cleary define that they determine the width and height of the 
+	sprite. However, the names "spriteWidth" and "spriteHeight" may have been more clear
+	- The RetrieveSpriteRectangle() name is also clear as to what its purpose is, so the naming there should not be changed
+
+Explanation of what is taking place within the class: Not Very Clear
+	- None of the methods have an explanation as to what is happening within the class. There's no telling why the Update class
+	is empty, nor is there a reason for why we need to retrieve the sprite rectangle. 
+	- However, it's important to note that the class is fairly simple on the surface, so not much of an explanation should
+	be provided. A bunch of comments would just crowd the class.
+
+Additional Notes:
+	- The numbers for the rectangles may appear random to someone at first. Possibly explain that the source correlates to 
+	the texture atlas. 

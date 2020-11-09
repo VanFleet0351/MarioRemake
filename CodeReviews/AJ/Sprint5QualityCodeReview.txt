@@ -1,0 +1,31 @@
+﻿Author: AJ
+Date: 4/8/2019
+Sprint: 5
+File under review: LevelOneOneState.cs
+Author of file: Kyle Van-Fleet
+Time: 10 minutes
+
+Coupling: High
+-This class knows about the levelmanager, collisions, items, the factories, and the camera
+-These are a lot of dependencies, however they are all necessary. It needs to know about all of these things
+ to load the game
+-Moves a lot of the update stuff from the Game class to a state class
+
+Cohesion: High
+-Each method is named well with a specific purpose
+-The whole class manages, updates, and draws the game state
+-"Update" updates everything, "Draw" draws everything, "Reset" resets the state, and "Initialize" 
+ initializes everything
+
+Additional Notes: 
+-The design pattern is easy to work with. Kyle created it, and I was able to make the EndOfGameState very
+ easily without any confusion
+-I don't know how we can decrease the coupling on this class, but it might be a good idea
+-Abstracted well
+
+Hypothetical Changes:
+Kyle mentioned a powerup that reverses time. If we wanted to implement that, then this GameState could be the
+place where we store the position of every object over time. Then, we can pass that to a new GameState when
+Mario activates the powerup to actually go back through all of those saved states. This could be done with
+a List/Collection of GameStates that is added to on every update. This would take up a lot of memory,
+but doesn't seem too difficult to do.

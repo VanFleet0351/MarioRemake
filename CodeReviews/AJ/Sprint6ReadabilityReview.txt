@@ -1,0 +1,18 @@
+﻿Author: AJ
+Date: 4/21/2019
+Sprint: 6
+File under review: Level2State.cs
+Author of file: Kyle Van-Fleet
+Time: 5 minutes
+
+Naming: Good naming, it is the game state for level 2 so it really can't b more concise than this
+
+Explanation: It initializes by making the new LevelManager for the level,
+attaching the level to all of the factories, starting the music, and resetting the camera. Due to
+good naming, it is very easy to see what is happening throughout the initialization. Update calls
+update on everything attached to the level, including the controller, level, and collisions. It 
+also checks if the player is dead and updates that state accordingly. Draw just calls the level
+Draw method which eventually calls all of the other Draw methods.
+
+Additional Notes: I can't think of any improvements. It's concise, and easy to read through and
+understand.

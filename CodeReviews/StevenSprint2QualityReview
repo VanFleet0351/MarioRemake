@@ -1,0 +1,11 @@
+Author: Steven Nichols
+Date: 2/6/19
+Sprint: 2
+File under review: Controller.cs
+Author of file: Kyle Van-Fleet
+
+Comments on quality: This file created a runtime error that occurs wehn unknow keys are pressed. 
+					 The class also does not yet change states properly. These create a disppearing left facing mario and crashes. 
+
+Suggestion w/ implementation notes: My suggestion is to add a check for if a key had been pressed as mentioned in class. 
+Other issues are already being resolved and updated by Kyle
