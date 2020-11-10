@@ -14,5 +14,5 @@ New features:
 
 
 <iframe width="420" height="315"
-src="https://youtu.be/Qo-ijEslcdc">
+src="https://youtu.be/Qo-ijEslcdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 </iframe>
