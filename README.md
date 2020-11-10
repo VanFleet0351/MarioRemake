@@ -9,10 +9,5 @@ in the original game.</p>
 
 New features:
 - <b>Ice flower power-up</b>: Freezes enemies for a short time
-
-<iframe width="420" height="315"
-src="https://youtu.be/Qo-ijEslcdc">
-</iframe
-
 - <b>Reverse time</b>: Allows the user to reverse time (similar to Braid)
 - <b>Veritcal level</b>: To test the players platforming skill
