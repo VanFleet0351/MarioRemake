@@ -9,7 +9,7 @@ My team was tasked with recreating the first level of Mario using C# and maintai
 <p>For the last sprint of this project the team was given the liberty of add our own levels and features that were not present
 in the original game.</p>
 
-### New features:
+### **New features:**
 * <b>Ice flower power-up</b>: Freezes enemies for a short time
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qo-ijEslcdc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
