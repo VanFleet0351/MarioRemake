@@ -13,9 +13,16 @@ My team was tasked with recreating the first level of Mario using C# and maintai
 
 
 ### **About the project:**
-**Collaborators:** Ali Erdaty (erdaty13@gmail.com), Jalen Soat (soat.3@osu.edu)
+**Collaborators:** 
+* [Ali Erdaty](https://www.linkedin.com/in/aj-erdaty-a97732126/) (erdaty13@gmail.com)
+* [Jalen Soat](https://github.com/jsoat) (soat.3@osu.edu)
 
-**Technology used:** C#, XML, Monogames, Visual Studio, Azur DevOps for version control and agile development tools. 
+**Technology used:** 
+* C#
+* XML
+* Monogames
+* Visual Studio
+* Azur DevOps for version control and agile development tools. 
 
 **Goal:** The goal of this project was to craft high-quality software, understand the process of Agile software development, survey design patterns, become familiar with advanced tools for software development and project management, and experience working in a small sized team.
 
