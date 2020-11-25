@@ -3,7 +3,7 @@
 # MarioRemake
 A remake of the classic Mario game for NES.
 
-This was a class project for CSE 3902 at OSU. This project was completed by a 3 person team over the length of a semester.
+This was a class project for CSE 3902 at The Ohio State University. This project was completed by a 3 person team over the length of a semester.
 My team was tasked with recreating the first level of Mario using C#, maintaining high quality code, and utilizing OOP.
 
 [CSE 3902 Course website](https://web.cse.ohio-state.edu/~boggus.2/3902/)
